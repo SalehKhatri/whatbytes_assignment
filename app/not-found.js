@@ -1,6 +1,6 @@
-import React from 'react';
-import Link from 'next/link';
-import { AlertCircle, Home } from 'lucide-react';
+import React from "react";
+import Link from "next/link";
+import { AlertCircle, Home } from "lucide-react";
 
 const Custom404 = () => {
   return (
@@ -11,10 +11,14 @@ const Custom404 = () => {
           404 - Page Not Found
         </h1>
         <p className="mt-2 text-lg text-gray-600">
-          Oops! The page you&apos;re looking for doesn&apos;t exist or has been moved.
+          Oops! The page you&apos;re looking for doesn&apos;t exist or has been
+          moved.
         </p>
         <div className="mt-8">
-          <Link href="/" className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-300">
+          <Link
+            href="/"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-300"
+          >
             <Home className="mr-2 h-5 w-5" />
             Return Home
           </Link>

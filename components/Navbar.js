@@ -1,6 +1,7 @@
 "use client";
 
 import { Poppins } from "next/font/google";
+import Link from "next/link";
 
 const poppins = Poppins({
   weight: ["600", "700"],
@@ -11,11 +12,13 @@ const Navbar = () => {
   return (
     <nav className="w-full bg-white flex items-center justify-between p-3 md:p-6 border-b-2 border-gray-100 ">
       <div className="logo flex ">
+        <Link href="/">
         <img
           className="w-[140px] sm:w-[160px] md:w-[180px]"
           src="https://cdn.prod.website-files.com/65cb431fbaab685eab1f5470/65cb445e7204d21122a75be0_WHATBYTESLOGO.png"
           alt="WhatBytes_Logo"
         />
+        </Link>
       </div>
       <div className="profile border-[2px] border-gray-200 rounded-lg">
         <div className="flex space-x-1 items-center p-1 ">
