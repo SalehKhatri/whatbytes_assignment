@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           <div className="lg:flex">
             <Sidebar />
-            <main className="pl-16 lg:pl-0 w-full ">{children}</main>
+            <main className="pl-16 lg:pl-0 w-full bg-white ">{children}</main>
           </div>
         </ReduxProvider>
       </body>

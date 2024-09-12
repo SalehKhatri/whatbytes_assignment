@@ -53,7 +53,7 @@ const QuickStats = () => {
                 />
               </div>
               <div>
-                <p className="font-bold text-lg">{item.title}</p>
+                <p className="font-bold text-black text-lg">{item.title}</p>
                 <p className="text-gray-500 tracking-tight text-sm uppercase">
                   {item.subTitle}
                 </p>

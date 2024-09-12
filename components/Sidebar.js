@@ -66,7 +66,7 @@ const Sidebar = () => {
           isOpen ? "translate-x-44" : "translate-x-0"
         } lg:hidden`}
       >
-        <button className="cursor-pointer" onClick={toggleSidebar}>
+        <button className="cursor-pointer text-black" onClick={toggleSidebar}>
           <Menu className="w-6 h-6" />
         </button>
       </div>

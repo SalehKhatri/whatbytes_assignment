@@ -73,7 +73,7 @@ const UpdateStatsModal = ({ toogleModal }) => {
         className={`bg-white p-3 md:p-6 rounded-lg shadow-lg max-w-md w-full md:max-w-lg lg:max-w-xl overflow-y-auto ${poppins.className} `}
       >
         <div className="flex justify-between">
-          <p className="font-semibold text-xl">Update Scores</p>
+          <p className="font-semibold text-xl text-black">Update Scores</p>
           <img
             src="/images/html_logo.png"
             alt="Html5 logo"
@@ -90,7 +90,7 @@ const UpdateStatsModal = ({ toogleModal }) => {
                   </div>
                   <p className=" md:text-base text-xs">
                     Update Your{" "}
-                    <span className="font-semibold">{item.title}</span>
+                    <span className="font-semibold text-black">{item.title}</span>
                   </p>
                 </div>
                 <div className="flex flex-col">
@@ -100,7 +100,7 @@ const UpdateStatsModal = ({ toogleModal }) => {
                     render={({ field }) => (
                       <input
                         {...field}
-                        className="w-36 md:w-48 border outline-none border-blue-700 p-2 rounded md:rounded-lg"
+                        className="w-36 md:w-48 border outline-none border-blue-700 p-2 rounded md:rounded-lg text-black"
                         type={item.fieldType}
                       />
                     )}
