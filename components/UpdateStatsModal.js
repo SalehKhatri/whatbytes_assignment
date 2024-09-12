@@ -88,9 +88,9 @@ const UpdateStatsModal = ({ toogleModal }) => {
                   <div className="bg-[#132278] md:w-6 md:h-6 w-5 h-5 rounded-full  flex justify-center items-center ">
                     <p className="text-white md:text-base text-sm">{item.id}</p>
                   </div>
-                  <p className=" md:text-base text-xs">
+                  <p className=" md:text-base text-xs text-black">
                     Update Your{" "}
-                    <span className="font-semibold text-black">{item.title}</span>
+                    <span className="font-semibold">{item.title}</span>
                   </p>
                 </div>
                 <div className="flex flex-col">
