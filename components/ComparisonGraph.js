@@ -20,6 +20,7 @@ const ComparisonGraph = () => {
     { percentile: 100, students: 1 },
   ];
   const { percentile } = useSelector((state) => state.user); //Getting percentile from redux
+  const averagePercentile = 72;
   return (
     <MyDiv className={"w-full  xl:w-[670px] py-3 "}>
       <p className="font-bold text-sm md:text-base text-neutral-800">
@@ -30,7 +31,7 @@ const ComparisonGraph = () => {
           <span className="text-gray-600 font-semibold ">
             You Scored {percentile}% percentile
           </span>{" "}
-          which is lower than the average percentile 72% of all the engineers
+          which is {percentile<averagePercentile?"lower":"higher"} than the average percentile {averagePercentile}% of all the engineers
           who took the assessment
         </p>
         <div className="bg-gray-100 w-12 h-12 rounded-full flex justify-center items-center">
